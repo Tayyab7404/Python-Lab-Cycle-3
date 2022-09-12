@@ -13,7 +13,8 @@ class Mother:
 class Son(Father, Mother):
     def __init__(self):
         pass
-    
-S = Son()
-S.height()
-S.colour()
+
+if __name__ == "__main__":
+    S = Son()
+    S.height()
+    S.colour()
