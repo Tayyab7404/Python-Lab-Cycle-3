@@ -19,5 +19,6 @@ class Son(Father):
         print(f"Father's Property = {self.Property2}")
         print(f"Son's Property = {self.Property3}")
     
-S = Son(10000000, 100000, 1000)
-S.display()
+if __name__ == "__main__":
+    S = Son(10000000, 100000, 1000)
+    S.display()
