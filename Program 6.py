@@ -7,9 +7,8 @@ class Fraction:
 
         if x == 0:
             return y
-
-        else:
-            return self.hcf(y%x,x)
+        
+        return self.hcf(y%x,x)
 
     def __init__(self,numer,denom):
         h = self.hcf(abs(numer),abs(denom))
@@ -43,8 +42,6 @@ if __name__ == "__main__":
     num3 = num1 + num2
     num4 = num1 - num2
 
-    print(f"{num1} + {num2} = {num3}")
-    print(f"{num1} + {num2} = {num3.float()}")
+    print(f"{num1} + {num2} = {num3} = {num3.float()}")
 
-    print(f"{num1} - {num2} = {num4}")
-    print(f"{num1} - {num2} = {num4.float()}")
+    print(f"{num1} - {num2} = {num4} = {num4.float()}")
