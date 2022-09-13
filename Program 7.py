@@ -14,7 +14,7 @@ class Vehicle:
         print(f"Price of {self.Type}: {self.Price}")
         
     def speed(self):
-        print(f"Maximum of speed of {self.Type}: {self.Speed}")
+        print(f"Maximum speed of {self.Type}: {self.Speed}")
         
     def change_gear(self):
         print(f"Number of gears of {self.Type}: {self.Gears}")
