@@ -32,10 +32,11 @@ class Rectangle(Shape):
     def perimeter(self):
         return 2 * (self.length + self.breadth)
 
-side = int(input("Enter side of the Square: "))
-S = Square(side)
-print(f"Square:\nArea = {S.area()}\nPerimeter = {S.perimeter()}")
+if __name__ == "__main__":
+    side = int(input("Enter side of the Square: "))
+    S = Square(side)
+    print(f"Square:\nArea = {S.area()}\nPerimeter = {S.perimeter()}")
 
-length, breadth = [int(x) for x in input("Enter Length and Breadth of the Rectangle: ").split()]
-R = Rectangle(length, breadth)
-print(f"Rectangle:\nArea = {R.area()}\nPerimeter = {R.perimeter()}")
+    length, breadth = [int(x) for x in input("Enter Length and Breadth of the Rectangle: ").split()]
+    R = Rectangle(length, breadth)
+    print(f"Rectangle:\nArea = {R.area()}\nPerimeter = {R.perimeter()}")
