@@ -9,7 +9,7 @@ def check(age):
         if age>30:
             raise MoreAgeError("Ineligible due to more age!")
         else:
-            print("The canditate in eligible")
+            print("The canditate is eligible")
         
     except MoreAgeError as e:
         print(e)
